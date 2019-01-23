@@ -1,6 +1,13 @@
 # XTBTorch
 Detecting tuberculosis from X-ray scan using pytorch
 
+## Requirements
+```
+pytorch 1.0+
+scikit-learn
+matplotlib
+```
+
 ## Introduction
 Dataset is obtained from [here](https://www.kaggle.com/kmader/pulmonary-chest-xray-abnormalities) which consisted of **2 differnet set of scans, ChinaSet and Montgomery**.
 
