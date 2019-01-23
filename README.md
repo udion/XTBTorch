@@ -131,3 +131,11 @@ XrayResnet(
 ```
 
 ## Results
+
+Training curves:
+
+![](pics/xtbcurve.png)
+
+Confidence report:
+
+![](pics/creport.png)
