@@ -6,6 +6,7 @@ Detecting tuberculosis from X-ray scan using pytorch
 pytorch 1.0+
 scikit-learn
 matplotlib
+jupyter notebook
 ```
 
 ## Introduction
@@ -20,6 +21,8 @@ I randomly picked **680 scans** (85%) for training and **120 scans** (15%) for t
 
 ## Preprocessing of dataset
 Each of the scan in training set is randomly rotated, translated, and horizontally flipped to perform the augmentation. *No augmentation was performed on testing set*. All the scans and their augmented versions for training are present in `data/train` and test dataset is present in `data/test`
+
+Preprocessing notebook can be found at `src/Xray_DatasetPreprocess.ipynb`
 
 Some examples of positive scan and it's augmented version:
 
@@ -39,6 +42,8 @@ Some examples of negative scan and it's augmented version:
 
 ## Model and Training
 I modified `resnet18` architecture (calling it **XrayResnet**) from pytorch's model library. I appended a `conv2d` layer at beginning of the network to conver the single channel image to 3 channel image. and the final `average 2d pool` and `Linear` layers were changed to fit the binary classificaion problem.
+
+The training and testing loop can be found at `src/Xray_trainloop.ipynb`
 
 
 
